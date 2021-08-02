@@ -1,0 +1,29 @@
+PROCEDURE dot_product(v1 , v2  : ARRAY_OF INTEGER , var ps : INTEGER )
+VAR
+    i : INTEGER
+BEGIN
+    ps:=0
+    IF (v1.length =v2.length) THEN
+    FOR i FROM 0 TO v1.length-1 STEP  DO
+        ps := ps+(v1[i] * v2[i])
+
+    END_FOR
+    ELSE 
+    break
+    
+    END_IF
+
+END
+ALGORITHM orthogonome
+VAR
+    t1 : ARRAY_OF ARRAY
+    i,j : INTEGER
+     ps : INTEGER 
+BEGIN
+FOR i FROM 0 TO t1.length-2 STEP   DO
+    FOR j FROM i+1 TO t1.length-1 STEP   DO
+        set_instruction
+    END_FOR
+END_FOR
+    
+END
